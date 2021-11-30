@@ -23,14 +23,28 @@ export const Navigation = styled.ul`
   list-style: none;
 `;
 export const NavigationMenu = styled.li`
-  display: flex;
+  display: inline-block;
+  margin: 0;
   color: white;
+  //   text-transform: uppercase;
   font-size: 20px;
+  font-family: "Helvetica", "Verdana", sans-serif;
   cursor: pointer;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
+  padding: 20px;
+  &::after {
+    display: block;
+    content: "";
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
   &:hover {
-    border-bottom: 1px solid #ffcba8;
     color: #ffcba8;
-    font-size: 20px;
+    &::after {
+      transform: scaleX(1);
+      transform-origin: 0% 50%;
+      border-bottom: 1px solid #ffcba8;
+      font-size: 20px;
+    }
   }
 `;

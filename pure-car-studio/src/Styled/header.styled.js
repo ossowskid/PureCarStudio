@@ -4,8 +4,6 @@ export const Header = styled.header`
   display: flex;
   position: sticky;
   width: 100vw;
-  height: 100px;
-  background-color: #111111;
   border-bottom: 1px solid #ffcba8;
 `;
 export const Logo = styled.div`
@@ -26,11 +24,9 @@ export const NavigationMenu = styled.li`
   display: inline-block;
   margin: 0;
   color: white;
-  //   text-transform: uppercase;
-  font-size: 20px;
-  font-family: "Helvetica", "Verdana", sans-serif;
+  font-size: 14px;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   padding: 20px;
   &::after {
     display: block;
@@ -44,7 +40,7 @@ export const NavigationMenu = styled.li`
       transform: scaleX(1);
       transform-origin: 0% 50%;
       border-bottom: 1px solid #ffcba8;
-      font-size: 20px;
+      font-size: 14px;
     }
   }
 `;

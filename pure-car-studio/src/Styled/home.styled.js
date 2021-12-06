@@ -16,9 +16,7 @@ export const MainHome = styled.div`
 `;
 
 export const MainHomeImageGallery = styled.div`
-  width: 400px;
-  height: 400px;
-  background-color: tomato;
+  box-shadow: 10px 10px 10px black;
 `;
 
 export const TextAnimationBox = styled.div`

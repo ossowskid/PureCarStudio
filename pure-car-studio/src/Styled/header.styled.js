@@ -4,7 +4,7 @@ export const Header = styled.header`
   display: flex;
   position: sticky;
   width: 100vw;
-  border-bottom: 1px solid #ffcba8;
+  border-bottom: 1px solid #e3b08c;
 `;
 export const Logo = styled.div`
   display: flex;
@@ -35,11 +35,11 @@ export const NavigationMenu = styled.li`
     transition: transform 250ms ease-in-out;
   }
   &:hover {
-    color: #ffcba8;
+    color: #e3b08c;
     &::after {
       transform: scaleX(1);
       transform-origin: 0% 50%;
-      border-bottom: 1px solid #ffcba8;
+      border-bottom: 1px solid #e3b08c;
       font-size: 14px;
     }
   }

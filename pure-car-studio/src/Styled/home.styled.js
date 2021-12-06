@@ -1,64 +1,43 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { fadeInDown, fadeInUp } from "react-animations";
+import topLogo from "../images/PureCarAnimation3.png";
 
-export const MainBox = styled.div`
+const fadeInDownAnimation = keyframes`${fadeInDown}`;
+const fadeInUpAnimation = keyframes`${fadeInUp}`;
+
+export const MainHome = styled.div`
   display: flex;
-  flex-direction row;
-  align-items: center;
+  justify-content: center;
   justify-content: space-evenly;
   margin: 0 auto;
-  width: 100vw;
+  align-items: center;
+  width: 90vw;
   height: 80vh;
-//   background-color: red;
-`;
-export const HomeInformation = styled.div`
-  display: flex;
-  align-items: center;
-  width: 380px;
-  height: 280px;
-  background-color: #e6a478;
-  transform: skew(-8deg);
 `;
 
-export const HomeImageBox = styled.div`
-  display: flex;
-  align-items: center;
-  width: 380px;
-  height: 280px;
-  transform: skew(8deg);
-  background-color: #e6a478;
-`;
-
-export const HomeInformationTextBox = styled.div`
-  text-align: center;
-  color: #111;
+export const MainHomeImageGallery = styled.div`
   width: 400px;
-  height: 300px;
-  background-color: rgba(255, 255, 255, 0.7);
-  transform: skew(8deg);
+  height: 400px;
+  background-color: tomato;
 `;
 
-export const HomeImageInsideBox = styled.div`
-  width: 400px;
-  height: 300px;
-  background-color: rgba(255, 255, 255, 0.7);
-  transform: skew(-8deg);
-`;
-
-export const InformationBoxDiv = styled.div`
+export const TextAnimationBox = styled.div`
   display: flex;
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
+  flex-flow: column;
+  align-items: center;
   justify-content: center;
-  list-style: none;
-`;
-export const TextBox = styled.div`
-  display: flex;
-  padding: 0 15px;
-  font-size: 20px;
+  width: 400px;
+  height: 400px;
 `;
 
-export const Link = styled.a`
-  text-decoration: none;
-  color: #111;
+export const TextAnimationFirstLine = styled.img.attrs({
+  src: `${topLogo}`,
+})`
+  animation: 5s ${fadeInDownAnimation};
+`;
+
+export const TextAnimationSecondLine = styled.div`
+  font-size: 16px;
+  color: #e3b08c;
+  animation: 5s ${fadeInUpAnimation};
 `;

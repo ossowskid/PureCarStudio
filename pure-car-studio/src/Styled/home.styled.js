@@ -1,9 +1,10 @@
 import styled, { keyframes } from "styled-components";
-import { fadeInDown, fadeInUp } from "react-animations";
+import { fadeInDown, fadeInUp, fadeInLeft, fadeIn } from "react-animations";
 import topLogo from "../images/PureCarAnimation3.png";
 
 const fadeInDownAnimation = keyframes`${fadeInDown}`;
 const fadeInUpAnimation = keyframes`${fadeInUp}`;
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
 
 export const MainHome = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ export const MainHome = styled.div`
 
 export const MainHomeImageGallery = styled.div`
   box-shadow: 10px 10px 10px black;
+  animation: 5s ${fadeInLeftAnimation};
 `;
 
 export const TextAnimationBox = styled.div`

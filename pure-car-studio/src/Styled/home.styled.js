@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { fadeInDown, fadeInUp, fadeInLeft, fadeIn } from "react-animations";
+import { fadeInDown, fadeInUp, fadeInLeft } from "react-animations";
 import topLogo from "../images/PureCarAnimation3.png";
 
 const fadeInDownAnimation = keyframes`${fadeInDown}`;

@@ -12,7 +12,6 @@ export const MainHome = styled.div`
   justify-content: space-evenly;
   margin: 0 auto;
   align-items: center;
-  width: 90vw;
   height: 100vh;
 `;
 

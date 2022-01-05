@@ -23,7 +23,7 @@ export const Accomplishment = () => {
       <ProductionBox id="accomplishment">
         <ImageGallery>
           <p className="menu__category">Realizacje</p>
-          <Gallery photos={photos} onClick={openLightbox} />
+          <Gallery photos={photos} onClick={openLightbox} direction={"row"} />
           <ModalGateway>
             {viewrIsOpen ? (
               <Modal onClose={closeLightbox}>

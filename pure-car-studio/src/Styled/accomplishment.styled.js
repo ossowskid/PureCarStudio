@@ -5,12 +5,12 @@ export const ProductionBox = styled.div`
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  min-height: 100vh;
+  margin-bottom: 5vh;
 `;
 
 export const ImageGallery = styled.div`
   display: flex;
   flex-flow: column;
-  max-width: 70vw;
-  max-height: 50vw;
+  max-width: 80vw;
 `;

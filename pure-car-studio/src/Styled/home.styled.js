@@ -13,7 +13,7 @@ export const MainHome = styled.div`
   margin: 0 auto;
   align-items: center;
   width: 90vw;
-  height: 80vh;
+  height: 100vh;
 `;
 
 export const MainHomeImageGallery = styled.div`

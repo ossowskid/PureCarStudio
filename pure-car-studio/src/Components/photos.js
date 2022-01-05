@@ -1,37 +1,52 @@
 export const photos = [
   {
-    src: "sliderImages/1.jpg",
-    width: 4,
-    height: 3,
-  },
-  {
-    src: "sliderImages/2.jpg",
+    src: "https://i.ibb.co/M9NbK9L/BMW.jpg",
     width: 2,
     height: 2,
   },
   {
-    src: "sliderImages/3.jpg",
-    width: 3,
-    height: 1,
+    src: "https://i.ibb.co/7XWKQkz/2.jpg",
+    width: 2,
+    height: 2,
   },
   {
-    src: "sliderImages/4.jpg",
-    width: 1,
-    height: 1,
+    src: "https://i.ibb.co/2vZ0vtC/3.jpg",
+    width: 2,
+    height: 2,
   },
   {
-    src: "sliderImages/5.jpg",
-    width: 4,
-    height: 3,
+    src: "https://i.ibb.co/Fx4MsDW/4.jpg",
+    width: 2,
+    height: 2,
   },
   {
-    src: "sliderImages/6.jpg",
-    width: 4,
-    height: 3,
+    src: "https://i.ibb.co/TYctKdd/5.jpg",
+    width: 2,
+    height: 2,
   },
   {
-    src: "sliderImages/7.jpg",
-    width: 4,
-    height: 3,
+    src: "https://i.ibb.co/q0jDbNG/6.jpg",
+    width: 2,
+    height: 2,
+  },
+  {
+    src: "https://i.ibb.co/n1FLw6N/7.jpg",
+    width: 2,
+    height: 2,
+  },
+  {
+    src: "https://i.ibb.co/TYctKdd/5.jpg",
+    width: 2,
+    height: 2,
+  },
+  {
+    src: "https://i.ibb.co/q0jDbNG/6.jpg",
+    width: 2,
+    height: 2,
+  },
+  {
+    src: "https://i.ibb.co/n1FLw6N/7.jpg",
+    width: 2,
+    height: 2,
   },
 ];

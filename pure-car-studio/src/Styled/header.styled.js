@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const Header = styled.header`
   display: flex;
-  position: sticky;
+  position: fixed;
+  top: 0;
   width: 100vw;
+  height: 5vw;
+  background-color: #111;
+  z-index: 1;
   border-bottom: 1px solid #e3b08c;
 `;
 export const Logo = styled.div`

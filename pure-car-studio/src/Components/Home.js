@@ -31,7 +31,7 @@ const IMAGES = [
 export const Home = () => {
   return (
     <>
-      <MainHome>
+      <MainHome id="home">
         <MainHomeImageGallery>
           <SimpleImageSlider
             width={400}

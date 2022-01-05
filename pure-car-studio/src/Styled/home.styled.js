@@ -17,6 +17,7 @@ export const MainHome = styled.div`
 `;
 
 export const MainHomeImageGallery = styled.div`
+  z-index: 0;
   box-shadow: 10px 10px 10px black;
   animation: 5s ${fadeInLeftAnimation};
 `;

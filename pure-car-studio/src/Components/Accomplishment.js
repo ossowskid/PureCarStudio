@@ -20,7 +20,7 @@ export const Accomplishment = () => {
 
   return (
     <>
-      <ProductionBox>
+      <ProductionBox id="accomplishment">
         <ImageGallery>
           <p className="menu__category">Realizacje</p>
           <Gallery photos={photos} onClick={openLightbox} />

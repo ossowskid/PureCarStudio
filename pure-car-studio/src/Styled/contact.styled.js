@@ -19,7 +19,7 @@ export const ContactForm = styled.div`
   justify-content: center;
   list-style-type: none;
   border-radius: 4px 0 0 4px;
-  background-color: rgba(227, 176, 140, 0.8);
+  background-color: rgba(227, 176, 140, 0.2);
   height: 100%;
   min-width: 40vw;
 `;
@@ -29,7 +29,7 @@ export const InformationBox = styled.div`
   flex-flow: column;
   min-width: 40vw;
   height: 100%;
-  background-color: rgba(227, 176, 140, 0.8);
+  background-color: rgba(227, 176, 140, 0.2);
   color: white;
   border-radius: 0 4px 4px 0;
 `;

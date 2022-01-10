@@ -61,7 +61,15 @@ export const Contact = () => {
           </ContactForm>
           <InformationBox>
             <h2>Jeżeli masz jakieś pytania</h2>
-            <h4>Zapraszamy do kontaktu poprzez formularz kontaktowy</h4>
+            <p>Zapraszamy do kontaktu poprzez formularz kontaktowy</p>
+            <p>Lub</p>
+            <div>
+              <ul>
+                <li>Telefon</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
           </InformationBox>
         </ContactMain>
       </ContactSection>

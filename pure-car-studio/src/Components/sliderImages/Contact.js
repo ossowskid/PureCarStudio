@@ -1,11 +1,12 @@
-import Box from "@mui/material/Box";
-import { FormControl, InputLabel, Input } from "@mui/material";
 import {
   ContactSection,
   ContactMain,
-  ContactForm,
   InformationBox,
-  ButtonSendEmail,
+  ContactForm,
+  FormElements,
+  Input,
+  TextArea,
+  Submit,
 } from "../../Styled/contact.styled";
 
 export const Contact = () => {
@@ -14,66 +15,51 @@ export const Contact = () => {
       <ContactSection id="contact">
         <p className="menu__category">Kontakt</p>
         <ContactMain>
-          <ContactForm
-            action="https://formsubmit.co/ossowski.dawid@gmail.com"
-            method="POST"
-          >
-            <Box
-              component="form"
-              sx={{
-                "& > :not(style)": { m: 5, gap: 2 },
-              }}
-              noValidate
-              autoComplete="off"
+          <ContactForm>
+            <form
+              action="https://formsubmit.co/ossowski.dawid@gmail.com"
+              method="POST"
             >
-              <FormControl>
-                <input
-                  type="hidden"
-                  name="_next"
-                  value="http://localhost:3000"
-                />
-                <InputLabel
-                  htmlFor="component-outlinded"
-                  type="email"
-                  name="email"
-                  required
-                >
-                  Adres E-mail
-                </InputLabel>
-
-                <Input
-                  id="outlined-textarea"
-                  label="Adres Email"
-                  type="email"
-                  name="email"
-                  color="primary"
-                />
-                <FormControl>
-                  <InputLabel htmlFor="component-outlinded" required>
-                    Temat
-                  </InputLabel>
-                  <Input
-                    id="outlined-textarea"
-                    label="Temat"
-                    name="topic"
-                    type="text"
-                  />
-                </FormControl>
-                <FormControl>
-                  <InputLabel htmlFor="component-outlinded" required>
-                    Wiadomość...
-                  </InputLabel>
-                  <Input
-                    id="outlined-textarea"
-                    label="Treść wiadomośći"
-                    name="message"
-                    rows={10}
-                    multiline
-                  />
-                </FormControl>
-              </FormControl>
-            </Box>
-            <ButtonSendEmail type="submit">Send</ButtonSendEmail>
+              <FormElements>
+                <li>
+                  <label>
+                    <Input
+                      type="email"
+                      name="email"
+                      placeholder="Adres Email..."
+                      required
+                    />
+                  </label>
+                </li>
+              </FormElements>
+              <FormElements>
+                <li>
+                  <label>
+                    <Input
+                      type="text"
+                      name="title"
+                      placeholder="Tytuł..."
+                      required
+                    />
+                  </label>
+                </li>
+              </FormElements>
+              <FormElements>
+                <li>
+                  <label>
+                    <TextArea
+                      style={{ resize: "none" }}
+                      name="message"
+                      cols="20"
+                      rows="15"
+                      placeholder="Wiadomość..."
+                      required
+                    />
+                  </label>
+                </li>
+              </FormElements>
+              <Submit type="submit">Wyślij waidomość</Submit>
+            </form>
           </ContactForm>
           <InformationBox>Jakieś info</InformationBox>
         </ContactMain>

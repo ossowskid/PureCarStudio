@@ -31,8 +31,7 @@ export const Contact = () => {
                     />
                   </label>
                 </li>
-              </FormElements>
-              <FormElements>
+
                 <li>
                   <label>
                     <Input
@@ -43,8 +42,7 @@ export const Contact = () => {
                     />
                   </label>
                 </li>
-              </FormElements>
-              <FormElements>
+
                 <li>
                   <label>
                     <TextArea
@@ -61,7 +59,10 @@ export const Contact = () => {
               <Submit type="submit">Wyślij waidomość</Submit>
             </form>
           </ContactForm>
-          <InformationBox>Jakieś info</InformationBox>
+          <InformationBox>
+            <h2>Jeżeli masz jakieś pytania</h2>
+            <h4>Zapraszamy do kontaktu poprzez formularz kontaktowy</h4>
+          </InformationBox>
         </ContactMain>
       </ContactSection>
     </>

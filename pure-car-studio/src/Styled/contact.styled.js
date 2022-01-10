@@ -26,9 +26,11 @@ export const ContactForm = styled.div`
 
 export const InformationBox = styled.div`
   display: flex;
+  flex-flow: column;
   min-width: 40vw;
   height: 100%;
-  background-color: red;
+  background-color: rgba(227, 176, 140, 0.8);
+  color: white;
   border-radius: 0 4px 4px 0;
 `;
 
@@ -41,6 +43,7 @@ export const Input = styled.input`
   font-family: Arial;
   font-size: 15px;
   padding: 12px 20px;
+  margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -51,6 +54,7 @@ export const Input = styled.input`
 export const TextArea = styled.textarea`
   width: 80%;
   padding: 12px 20px;
+  margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -62,7 +66,6 @@ export const TextArea = styled.textarea`
 export const Submit = styled.button`
   width: 30%;
   background-color: #4caf50;
-  color: black;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;

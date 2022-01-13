@@ -62,9 +62,25 @@ export const TextArea = styled.textarea`
   font-family: Arial;
   font-size: 15px;
 `;
+export const UnderForm = styled.div`
+  display: inline-flex;
+  align-items: center;
+  /* flex-flow: column; */
+  width: 100%;
+`;
+export const ButtonDiv = styled.div`
+  width: 35%;
+`;
+
+export const PopupInformation = styled.div`
+  position: static;
+  padding-left: 5%;
+  min-width: 55%;
+  transition: 1s;
+`;
 
 export const Submit = styled.button`
-  width: 30%;
+  /* width: 30%; */
   background-color: #4caf50;
   padding: 14px 20px;
   margin: 8px 0;
@@ -74,11 +90,4 @@ export const Submit = styled.button`
   &&:hover {
     background-color: #45a049;
   }
-`;
-
-export const ButtonSendEmail = styled.button`
-  background-color: white;
-  width: 150px;
-  height: 50px;
-  border: 1px solid #e3b08c;
 `;

@@ -13,7 +13,7 @@ import {
   PopupInformation,
   UnderForm,
   ButtonDiv,
-} from "../../Styled/contact.styled";
+} from "../Styled/contact.styled";
 
 export const Contact = () => {
   const [values, setValues] = useState({
